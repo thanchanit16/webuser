@@ -1,0 +1,89 @@
+/* สิ่งที่อยู่ตรงนี้ จะมีไว้แค่ให้ dev อ่าน */
+/* 1. แต่งใคร ? (id, class, DOM) 2. แต่งอะไร ? */
+@font-face {
+    font-family: "kanit";
+    src: url("./Kanit/Kanit-Regular.ttf");
+  }
+  
+  body {
+    font-family: "kanit";
+    background-image: url('https://images.unsplash.com/photo-1710192230003-b73ed3eff86c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(207, 248, 248);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    font-size: 30px;
+    text-align: center;
+    background-color: #f4a378;
+    border: red 4px solid;
+  }
+  
+  .header-form {
+    width: 140px;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .form-input {
+    margin-bottom: 10px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  input.form,
+  textarea {
+    border: 2px burlywood solid;
+    width: 100%;
+  }
+  
+  .button {
+    border: 0;
+    width: 50%;
+    height: 40px;
+    background-color: #f4a378;
+    color: white;
+    border: 2px solid gray;
+  }
+  
+  .message {
+    background-color: gray;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  .message.success{
+    background-color: rgb(37, 226, 37);
+    display: block;
+  }
+  .message.danger{
+    background-color: red;
+    display: block;
+  }
+
+  @media screen and (max-width: 768px){
+    .flex {
+      flex-direction: column;
+    }
+    .header{
+      font-size: 24px;
+    }
+    .button{
+        width: 100%;
+    }
+  }
